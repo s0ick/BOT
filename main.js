@@ -17,7 +17,7 @@ function getInput(val){
         alert('Игра выключена');
         return 'Пользователь нажал "Отмена"';
       }
-    } else if(isNaN(num) || num === '') {
+    } else if(isNaN(num) || num.trim() === '') {
       alert('Введите число!');
       num = prompt('Угадай число от 1 до 100:');
       return conclusion(num);
