@@ -22,10 +22,16 @@ function getInput(val){
       return conclusion(num);
     } else if(+num === val) {
       alert('Поздравляю, игра пройдена!');
-      return 'Это было число 47!';
+      return `Это было число ${val}!`;
     } 
   }
 }
-const conclusion = getInput(47);
+
+function randomInteger(min, max) {
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
+}
+
+const conclusion = getInput(randomInteger(1, 100));
 console.dir(conclusion);
 console.log(conclusion(num));
