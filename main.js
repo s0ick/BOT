@@ -3,7 +3,6 @@
 let num = prompt('Угадай число от 1 до 100:');
 
 function getInput(val){
-
   return function (num) {
     if(num === null){
       alert('Игра выключена');
